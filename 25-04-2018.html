@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="formsignup" id="formsignup">
+        <label>Username: <input type="text" name="username" id="username" placeholder="Enter your username"
+        value="" required ><span id="username_error"></span></label><br><br>
+
+        <label>Password: <input type="password" name="password" id="password" value"" required><span id="password_error" ></span></label><br><br>
+
+        <label>Confirm Password: <input type="password" name="confirmpassword" id="confirmpassword" value""></label><br><br>
+
+        <label for="">Phone Number: <input type="tel" name="number" id="phonenumber" value="" maxlength="11" required></label><br><br>
+
+        <label for="">Postal Code: <input type="tel" name="number" id="postalcode" value="" maxlength="6" required></label><br><br>
+
+        <label for="">E-mail: <input type="email" name="email" id="email" value="" required placeholder="Your Email Address"></label><br><br>
+
+
+
+        <input type="submit" name="submit" id="submit" placeholder=""
+        value="save" onclick="saveUser()">
+
+       
+
+<script type="text/javascript">
+    function saveUser() {
+        var username= document.getElementById("username").value;
+
+        var password = document.getElementById("password").value;
+
+        var confirmPassword= document.getElementById("confirmpassword").value;
+
+        var phoneNumber= document.getElementById("phonenumber").value;
+        var tel= phoneNumber.toString();
+        console.log(tel);
+
+        var postalCode= document.getElementById("postalcode").value;
+
+        var eMail= document.getElementById("email").value;
+
+        
+    
+        if(username.length < 6) {
+           document.getElementById("username_error").innerHTML="error";
+        } 
+
+        if (password.length < 8) {
+            document.getElementById("password_error").innerHTML="error";
+        } else if (password !== confirmPassword) {
+            alert ("passwords do not match");
+        }
+        
+
+        
+
+    
+    }
+
+</script>
+
+    </form>
+</body>
+</html>

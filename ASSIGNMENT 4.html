@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ASSIGNMENT 4</title>
+</head>
+<body>
+        <form action="" name="listofAnimals" id="listofAnimals">
+            <label>Name of Animal: <input type="text" name="nameofanimal" id="nameofanimal" placeholder="Enter name of animal" value="" required ></label>
+            <input type="submit" name="submit" id="submit" placeholder=""
+        value="check" onclick="checkName()">
+
+        </form>
+
+    <script type="text/javascript">
+        
+// Create the list of animals using Array format
+    var listofAnimals =["Cat", "Polar Bear", "Monkey", "Llama", "Parrot", "Dog", "Camel", "leopard", "Puma", "Jaguar"];
+       
+// program to accept input from user  
+    function checkName() {
+        var nameofAnimal = document.getElementById("nameofanimal").value;
+
+        if (listofAnimals.includes(nameofAnimal)) {
+                alert ("exist");
+            } else{
+                alert ("does not exist");
+            }
+
+}
+
+    </script>
+</body>
+</html>

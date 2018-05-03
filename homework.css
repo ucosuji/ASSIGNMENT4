@@ -1,0 +1,48 @@
+header {
+    background-color: #008000;
+    text-align: center;
+
+}
+
+section > nav {
+    background-color: rgb(186, 238, 144);
+    padding: 10px;
+    margin:20px;
+    border: thick inset;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #008000;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+p {
+    font-family: Arial;
+    line-height: 1.4em;
+    color: #000000;}
+    p.intro:first-line {
+    font-weight: bold;}
+    .credits {
+    font-style: italic;
+    text-align: right;}
+    a {
+    text-decoration: none;}
+    a:hover {
+    text-decoration: underline;}
+
+    article {
+        margin: 5px 0px;
+        padding: 5px 5px;
+        box-shadow: -1px -1px 6px #888888;
+    }
+
+    .uc {
+        margin-left: 200px;
+    }
+
+    
